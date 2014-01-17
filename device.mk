@@ -54,6 +54,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     initlogo.rle \
     init.bt.rc \
+    init.crda.sh \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.ril.rc \
@@ -73,6 +74,10 @@ PRODUCT_PACKAGES += Torch
 # Wifi
 PRODUCT_PACKAGES += \
     libnetcmdiface \
+    linville.key.pub.pem \
+    regdbdump \
+    regulatory.bin \
+    crda \
     macloader
 
 # Set default USB interface
