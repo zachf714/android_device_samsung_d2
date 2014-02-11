@@ -30,6 +30,17 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+# RomDashboard Support
+PRODUCT_COPY_FILES += \
+       device/samsung/d2/prebuilt/app/ROMdBDevTool-v1.0.7.apk:system/app/ROMdBDevTool-v1.0.7.apk
+
+# RomDashboard Props
+PRODUCT_PROPERTY_OVERRIDES += \
+       ro.romdb.hash=44f0ad3d1b94afb4ba9be83bedbb338d937b0a4cdd124fd3bc775fdaeb3600a2
+       ro.romdb.autosubscribe=y
+       ro.romdb.version=54
+       ro.romdb.paranoid=y
+
 # Audio configuration
 PRODUCT_COPY_FILES += \
         device/samsung/d2/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
