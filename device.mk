@@ -31,15 +31,15 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # RomDashboard Support
-#PRODUCT_COPY_FILES += \
-#       device/samsung/d2/prebuilt/app/ROMdBDevTool-v1.0.7.apk:system/app/ROMdBDevTool-v1.0.7.apk
+PRODUCT_COPY_FILES += \
+       device/samsung/d2/prebuilt/app/ROMdBDevTool-v1.0.7.apk:system/app/ROMdBDevTool-v1.0.7.apk
 
 # RomDashboard Props
-#PRODUCT_PROPERTY_OVERRIDES += \
-#       ro.romdb.hash=44f0ad3d1b94afb4ba9be83bedbb338d937b0a4cdd124fd3bc775fdaeb3600a2
-#       ro.romdb.autosubscribe=y
-#       ro.romdb.version=54
-#       ro.romdb.paranoid=y
+PRODUCT_PROPERTY_OVERRIDES += \
+       ro.romdb.hash=6e06eada2e777bea33a75227bdec51dcffe2d95f59dface5253aaf49c1255c84
+       ro.romdb.autosubscribe=y
+       ro.romdb.version=1
+       ro.romdb.paranoid=y
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
